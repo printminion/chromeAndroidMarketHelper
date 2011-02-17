@@ -1,0 +1,26 @@
+{
+	"name": "QR Code Generator for Android Market™ on Web",
+	"version": "0.0.4",
+	"description": "Generate QR Code for installing Android apps on your device while surfing web-based Android Market™ (no sign-in required)",
+	"icons": {
+		"256": "images/icon256.png",
+		"128": "images/icon128.png",
+		"24": "images/icon24.png",
+		"19": "images/icon19.png"
+	},
+	"content_scripts": [
+    {
+      "matches": ["http://market.android.com/details*", "https://market.android.com/details*"],
+      "js": ["js/content_script.js"]
+    }
+  ],
+	"background_page": "background.html",
+	"permissions": [
+		"tabs"
+	],
+	"page_action": {
+		"default_name": "QR Code Generator for Android Market™ on Web",
+		"default_icon": "images/icon19.png",
+		"popup": "popup.html"
+	}
+}

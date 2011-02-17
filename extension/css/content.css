@@ -1,0 +1,61 @@
+/*
+content.css
+*/
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Sans-Serif;
+	font-size: 0.8em;
+}
+
+#title {
+	height: 20px;
+}
+
+#upss {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 80%;
+	padding: 2px;
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+	position:relative;
+}
+
+#upss #hint {
+	position: absolute; bottom: 0px; left:0px; z-index: 5;
+	padding:2px;
+}
+
+#left {
+	position: absolute; top: 0px; left:0px; z-index: 3;
+	height: 200px;
+	width: 150px;
+}
+
+#right {
+	position: absolute; top: 0px; right:0px; z-index: 4;
+	background-image: url('../images/android_done_50.png');
+	background-position: -21px -10px;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 194px;
+
+}
+
+
+.section-header {
+	background: #ebeff9;
+	padding: 3px 0 2px 5px;
+	font-weight: bold;
+	min-height: 1em;
+}
+
+.section-header.first {
+	margin-top: 0px;
+}
+
+#hint {
+	color: #aaa;
+	font-style: italic;
+}
