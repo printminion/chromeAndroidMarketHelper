@@ -6,8 +6,8 @@ chrome.extension.sendRequest({
 	'action' : 'fetchTabInfo'
 }, fetchTabInfo);
 
-function fetchTabInfo(backgroundPage) {
-	console.log('content_scripts.fetchTabInfo:' + backgroundPage);
+function fetchTabInfo(selectedPacketName) {
+	console.log('content_scripts.fetchTabInfo:' + selectedPacketName);
 	
     var placeholderObj = document.querySelector("#details-tab-1 div div");
     
