@@ -5,7 +5,7 @@
 <body>
 
 <script type="text/javascript">
-	console.log('background.html');
+	//console.log('background.html');
 
 	// Global accessor that the popup uses.
 	var selectedPacketName = null;
@@ -33,7 +33,7 @@
 			 */
 			var result = tab.url.search(/market.android.com/);
 			if (result != -1){
-				updateQRCode(tab.id, tab.url)
+				callback(updateQRCode(tab.id, tab.url));
 			}
 
 		});
@@ -62,16 +62,27 @@
 
 			selectedPacketName = splitted[1];
 
+			/*
+			 * remove & part
+			 */
+			var splitted2 = selectedPacketName.split('&', 3);
+			if(splitted2 != undefined && splitted2.length > 0){
+				selectedPacketName = splitted2[0]
+			}
+			
+
 			chrome.pageAction.setTitle({
 				tabId : tabId,
 				title : selectedPacketName
 			});
 			
 			chrome.pageAction.show(tabId);
+			return selectedPacketName;
 		} else {
 			chrome.pageAction.hide(tabId);
 		}
 
+		return null;
 	}
 
 
