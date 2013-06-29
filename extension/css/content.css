@@ -2,60 +2,63 @@
 content.css
 */
 body {
-	margin: 0px;
-	padding: 0px;
 	font-family: Arial, Sans-Serif;
 	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
 }
 
-#title {
-	height: 20px;
-}
+#title { height: 20px; }
 
 #upss {
 	font-family: helvetica, arial, sans-serif;
 	font-size: 80%;
-	padding: 2px;
 	height: 200px;
-	width: 100%;
 	overflow: hidden;
-	position:relative;
+	padding: 2px;
+	position: relative;
+	width: 100%;
 }
 
 #upss #hint {
-	position: absolute; bottom: 0px; left:0px; z-index: 5;
-	padding:2px;
+	bottom: 0;
+	left: 0;
+	padding: 2px;
+	position: absolute;
+	z-index: 5;
 }
 
 #left {
-	position: absolute; top: 0px; left:0px; z-index: 3;
 	height: 200px;
+	left: 0;
+	position: absolute;
+	top: 0;
 	width: 150px;
+	z-index: 3;
 }
 
 #right {
-	position: absolute; top: 0px; right:0px; z-index: 4;
 	background-image: url('../images/android_done_50.png');
 	background-position: -21px -10px;
 	background-repeat: no-repeat;
 	height: 200px;
+	position: absolute;
+	right: 0;
+	top: 0;
 	width: 194px;
-
+	z-index: 4;
 }
 
 
 .section-header {
 	background: #ebeff9;
-	padding: 3px 0 2px 5px;
 	font-weight: bold;
 	min-height: 1em;
+	padding: 3px 0 2px 5px;
 }
 
-.section-header.first {
-	margin-top: 0px;
-}
+.section-header.first { margin-top: 0; }
 
-#hint {
-	color: #aaa;
-	font-style: italic;
-}
+#hint { color: #aaa; font-style: italic; }
+
+#qrcode_url, #qrcode { border: 0; }

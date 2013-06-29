@@ -15,22 +15,22 @@
             ]
         }
     ],
-    "description": "Generate QR Code for installing Android apps on your device while surfing web-based Android Market\u2122 (no sign-in required)",
+    "description": "Generate QR Code for installing Android apps on your device while surfing web-based Google Play\u2122 (no sign-in required)",
     "icons": {
         "128": "images/icon128.png",
         "19": "images/icon19.png",
         "24": "images/icon24.png",
         "256": "images/icon256.png"
     },
-    "name": "QR Code Generator for Android Market\u2122 on Web",
+    "name": "QR Code Generator for Google Play\u2122 on Web",
     "page_action": {
         "default_icon": "images/icon19.png",
-        "default_name": "QR Code Generator for Android Market\u2122 on Web",
+        "default_name": "QR Code Generator for Google Play\u2122 on Web",
         "popup": "popup.html"
     },
     "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
     "permissions": [
         "tabs"
     ],
-    "version": "0.0.7"
+    "version": "0.0.9"
 }

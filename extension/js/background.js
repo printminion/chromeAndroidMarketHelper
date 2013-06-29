@@ -73,6 +73,8 @@ function updateQRCode(tabId, tabUrl) {
 	});
 
 	chrome.pageAction.show(tabId);
+
+	chrome.pageAction.setPopup({tabId: tabId, popup: 'popup.html'});
 	return selectedPacketName;
 }
 
